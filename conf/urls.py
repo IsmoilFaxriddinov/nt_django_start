@@ -23,7 +23,8 @@ from blogs.views import home_page_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('blogs/', include('blogs.urls'))
+    path('blogs/', include('blogs.urls')),
+    path('cats/', include('cats.urls'))
 ]
 
 if settings.DEBUG:
