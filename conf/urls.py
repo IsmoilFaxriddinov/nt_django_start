@@ -24,7 +24,8 @@ from blogs.views import home_page_view
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('blogs/', include('blogs.urls')),
-    path('cats/', include('cats.urls'))
+    path('cats/', include('cats.urls')),
+    path('homework/', include('homework.urls'))
 ]
 
 if settings.DEBUG:
