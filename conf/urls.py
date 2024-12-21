@@ -19,11 +19,10 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.urls import path, include
 
-from blogs.views import home_page_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('blogs/', include('blogs.urls')),
+    path('blog/', include('blog.urls')),
     path('cats/', include('cats.urls')),
     path('homework/', include('homework.urls'))
 ]
