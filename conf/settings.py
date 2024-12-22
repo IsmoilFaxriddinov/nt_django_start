@@ -40,7 +40,8 @@ INSTALLED_APPS = [
 
     'cats',
     'homework',
-    'blog'
+    'blog',
+    'cars'
 ]
 
 MIDDLEWARE = [
