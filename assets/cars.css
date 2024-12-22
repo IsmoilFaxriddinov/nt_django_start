@@ -1,0 +1,11 @@
+.container {
+    display: flex; /* Flex qutisi */
+    flex-wrap: wrap; /* Qatorlarni to'ldirish */
+    justify-content: center; /* Kartalarni markazlashtirish */
+}
+
+.card {
+    margin: 15px; /* Kartalar orasidagi bo'shliq */
+    width: calc(33.33% - 30px); /* Har bir karta kengligi (3 ta karta qatoriga) */
+    transition: transform 0.3s; /* O'zgarishlar animatsiyasi */
+}
