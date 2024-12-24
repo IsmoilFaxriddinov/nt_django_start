@@ -10,7 +10,7 @@ class StudentModel(models.Model):
     updated_at = models.DateField(auto_now=True)
 
     def __str__(self):
-        return StudentModel.name
+        return self.name
 
     class Meta:
         verbose_name = 'Student'
@@ -26,8 +26,9 @@ class TeacherModel(models.Model):
     updated_at = models.DateField(auto_now=True)
 
     def __str__(self):
-        return TeacherModel.name
+        return self.name
 
     class Meta:
         verbose_name = 'Teacher'
         verbose_name_plural = 'Teachers'
+
