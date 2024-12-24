@@ -25,8 +25,8 @@ urlpatterns = [
     path('blog/', include('blog.urls')),
     path('cats/', include('cats.urls')),
     path('homework/', include('homework.urls')),
-    path('cars/', include('cars.urls')),
-    path('project/', include('project.urls'))
+    path('cars/', include('cars.urls'))
+    # path('project/', include('project.urls'))
 ]
 
 if settings.DEBUG:
