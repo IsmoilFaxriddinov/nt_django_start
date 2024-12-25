@@ -8,4 +8,4 @@ class BookModelAdmin(admin.ModelAdmin):
 
 @admin.register(models.AuthorModel)
 class AuthorModelAdmin(admin.ModelAdmin):
-    list_display = ['author_name', 'book_name']
+    list_display = ['author_name']
