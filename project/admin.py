@@ -13,7 +13,7 @@ class StudentModelAdmin(admin.ModelAdmin):
 
 @admin.register(models.GroupModel)
 class GroupModelAdmin(admin.ModelAdmin):
-    list_display = ['id', 'name', 'teacher', 'students']
+    list_display = ['id', 'name']
     search_fields = ['name']
 
 @admin.register(models.LessonModel)
