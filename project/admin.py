@@ -1,5 +1,27 @@
 from django.contrib import admin
-from project.models import TeacherModel, StudentModel
+from . import models
 
-admin.site.register(TeacherModel)
-admin.site.register(StudentModel)
+@admin.register(models.TeacherModel)
+class TeacherModelAdmin(admin.ModelAdmin):
+    list_display = ['id', 'name']
+    search_fields = ['name']
+
+@admin.register(models.StudentModel)
+class StudentModelAdmin(admin.ModelAdmin):
+    list_display = ['id', 'name']
+    search_fields = ['name']
+
+@admin.register(models.GroupModel)
+class GroupModelAdmin(admin.ModelAdmin):
+    list_display = ['id', 'name', 'teacher', 'students']
+    search_fields = ['name']
+
+@admin.register(models.LessonModel)
+class LessonModelAdmin(admin.ModelAdmin):
+    list_display = ['id', 'name', 'groups']
+    search_fields = ['name']
+
+@admin.register(models.HomeworkModel)
+class HomeworkModelAdmin(admin.ModelAdmin):
+    list_display = ['id', 'info']
+    search_fields = ['info']
